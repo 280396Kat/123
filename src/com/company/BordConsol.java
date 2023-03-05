@@ -23,7 +23,7 @@ public class BordConsol {
         switch (piece.getClass().getSimpleName()) {
             case "Pawn":
                 return " ♙ ";
-            case "Hourse":
+            case "Horse":
                 return " ♘ ";
             case "King":
                 return " ♔ ";
