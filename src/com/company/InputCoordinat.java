@@ -73,5 +73,6 @@ public class InputCoordinat {
         desk.defoldPiecePosishen();
         inmutPieceCordinatesForColor(Color.WHITE, desk);
         System.out.println(cordinat);
+
     }
 }
