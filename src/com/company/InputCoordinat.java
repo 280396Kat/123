@@ -67,12 +67,14 @@ public class InputCoordinat {
         }
     }
 
+
     public static void main(String[] args) {
         Cordinat cordinat = input();
         Desk desk = new Desk();
         desk.defoldPiecePosishen();
         inmutPieceCordinatesForColor(Color.WHITE, desk);
         System.out.println(cordinat);
+
 
 
 
