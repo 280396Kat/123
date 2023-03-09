@@ -75,5 +75,6 @@ public class InputCoordinat {
         System.out.println(cordinat);
 
 
+
     }
 }
