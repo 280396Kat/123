@@ -8,7 +8,7 @@ public class BordConsol {
     public static final String ANSI_BLACK_PIECE_COLOR = "\u001B[30m";
     public static final String ANSI_WHITE_SQUARE_BACKGROUND = "\u001B[47m";
     public static final String ANSI_BLACK_SQUARE_BACKGROUND = "\u001B[0;100m";
-    public static final String ANSI_HIGHLIGHTED_SQUARE_BACKGROUND = "\u001B[45m";
+
 
     private String getSpriteForEmptySqer(Cordinat cordinat) {
 
@@ -29,9 +29,9 @@ public class BordConsol {
                 return " ♔ ";
             case "Queen":
                 return " ♛ ";
-            case "Bishop" :
+            case "Bishop":
                 return " ♗ ";
-            case "Rook" :
+            case "Rook":
                 return " ♖ ";
 
         }

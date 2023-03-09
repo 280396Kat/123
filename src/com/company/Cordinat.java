@@ -1,5 +1,7 @@
 package com.company;
 
+import piece.CordinatShift;
+
 import java.util.Objects;
 
 public class Cordinat {
@@ -24,4 +26,22 @@ public class Cordinat {
     public int hashCode() {
         return Objects.hash(file, rang);
     }
+
+    public boolean canShift(CordinatShift cordinatShift) {
+        int f = file.ordinal() + cordinatShift.fileShift;
+        int r = rang + cordinatShift.rangShift;
+        if ((f < 0) || (f > 8)){
+            return false;
+        }
+        if ((r > 0) || (r < 8)){
+            return false;
+        }
+        return true;
+    }
+
+    public Cordinat shift(CordinatShift cordinatShift){
+        return new Cordinat(File.values()[this.file.ordinal() + cordinatShift.fileShift],
+                this.rang + cordinatShift.rangShift);
+    }
 }
+
