@@ -74,5 +74,6 @@ public class InputCoordinat {
         inmutPieceCordinatesForColor(Color.WHITE, desk);
         System.out.println(cordinat);
 
+
     }
 }
