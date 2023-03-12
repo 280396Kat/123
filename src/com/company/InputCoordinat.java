@@ -15,7 +15,7 @@ public class InputCoordinat {
             System.out.println("Пожалуйста, введите координаты.");
             String line = scanner.nextLine(); // считываем буквы(слова)
             if (line.length() != 2) {
-                System.out.println("Неправильный формат ввода. ");
+                System.out.println("Неправильный формат ввода.");
                 continue;
             }
             char fileChar = line.charAt(0); // буква идет от нуля

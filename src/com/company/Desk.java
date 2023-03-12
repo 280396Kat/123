@@ -12,7 +12,7 @@ public class Desk {
         pieceHashMap.put(cordinat, piece);
     }
 
-    public void defoldPiecePosishen() {
+    public void defoldPiecePosishen() { // метод
         for (File tmp : File.values()) {
             setPiece(new Cordinat(tmp, 2),
                     new Pawn(Color.WHITE, new Cordinat(tmp, 2)));
