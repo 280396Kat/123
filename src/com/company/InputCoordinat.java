@@ -9,9 +9,10 @@ public class InputCoordinat {
 
     private static final Scanner scanner = new Scanner(System.in);
 
+
     public static Cordinat input() {
         while (true) {
-            System.out.println("Пожалуйста, введите координаты. ");
+            System.out.println("Пожалуйста, введите координаты.");
             String line = scanner.nextLine(); // считываем буквы(слова)
             if (line.length() != 2) {
                 System.out.println("Неправильный формат ввода. ");
