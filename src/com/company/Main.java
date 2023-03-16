@@ -10,13 +10,8 @@ public class Main {
 
         Desk desk = new Desk();
         desk.defoldPiecePosishen();
-        BordConsol bordConsol = new BordConsol();
-        bordConsol.rendor(desk);
-        desk.getPiece(new Cordinat(File.B, 1));
-
-
-
-
+        Game game = new Game(desk);
+        game.gameLoop();
 
     }
 }

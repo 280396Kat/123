@@ -46,7 +46,7 @@ public class InputCoordinat {
 
     }
 
-    public static Cordinat inmutPieceCordinatesForColor(Color color, Desk desk) {
+    public static Cordinat inputPieceCordinatesForColor(Color color, Desk desk) {
         while (true) {
             System.out.println("Введите координаты фигуры для перемещения. ");
             Cordinat cordinat = input();
@@ -68,13 +68,25 @@ public class InputCoordinat {
         }
     }
 
+    public static Cordinat inputAvalybalSuqer(Set<Cordinat> cordinatSet) {
+        while (true) {
+            System.out.println("Пожалуйста введите координаты для выбранной фигуры. ");
+            Cordinat cordinateInput = input();
+            if (!cordinatSet.contains(cordinateInput)) {
+                System.out.println("Поле недоступно для хода. ");
+                continue;
+            }
+            return cordinateInput;
+        }
+    }
 
     public static void main(String[] args) {
         Cordinat cordinat = input();
         Desk desk = new Desk();
         desk.defoldPiecePosishen();
-        inmutPieceCordinatesForColor(Color.WHITE, desk);
+        inputPieceCordinatesForColor(Color.WHITE, desk);
         System.out.println(cordinat);
 
     }
+
 }

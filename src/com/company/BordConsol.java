@@ -16,23 +16,23 @@ public class BordConsol {
     }
 
     private String getPieceSprite(Piece piece) {
-        return coolorDesk(selectPiece(piece), piece.color, Desk.isSqerDarck(piece.cordinat));
+        return coolorDesk(" " + selectPiece(piece) + " ", piece.color, Desk.isSqerDarck(piece.cordinat));
     }
 
     private String selectPiece(Piece piece) {
         switch (piece.getClass().getSimpleName()) {
             case "Pawn":
-                return " ♙ ";
+                return "♙";
             case "Horse":
-                return " ♘ ";
+                return "♘";
             case "King":
-                return " ♔ ";
+                return "♔";
             case "Queen":
-                return " ♛ ";
+                return "♛";
             case "Bishop":
-                return " ♗ ";
+                return "♗";
             case "Rook":
-                return " ♖ ";
+                return "♖";
 
         }
         return "";
